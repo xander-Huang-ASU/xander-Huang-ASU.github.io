@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuxuan Huang</title>
+  <meta name="description" content="Yuxuan Huang — M.S. student in Computer Science at Arizona State University, working on LLM agents and multi-agent systems. Applying for PhD programs (Fall 2027)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+
+    <!-- ===== 左侧：头像 + 基本信息（手机上会移到顶部）===== -->
+    <aside class="sidebar">
+      <img class="avatar" src="source/avatar.jpg" alt="Photo of Yuxuan Huang"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="avatar-placeholder">YH</div>
+
+      <h1 class="name">Yuxuan Huang</h1>
+      <p class="role">M.S. Student in Computer Science<br />Arizona State University</p>
+
+      <ul class="links">
+        <li>Email: <a href="mailto:yhuan591@asu.edu">yhuan591@asu.edu</a></li>
+        <li><a href="source/Yuxuan_Huang-CV.pdf" target="_blank">CV</a></li>
+        <li><a href="https://github.com/xander-Huang-ASU" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/yuxuanhuang200204/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </aside>
+
+    <!-- ===== 右侧：主要内容 ===== -->
+    <main class="content">
+
+      <section id="about">
+        <p>
+          I am a Master's student in <b>Computer Science</b> at <b>Arizona State University</b>.
+          I am currently a research intern in the
+          <b>Data Mining and Reinforcement Learning (DaRL) Group</b>, advised by
+          <a href="https://labs.engineering.asu.edu/hw/" target="_blank"><b>Prof. Hua Wei</b></a>.
+        </p>
+        <p>
+          My research focuses on <b>LLM agents and multi-agent systems</b>. I am especially interested in
+          making agents <b>reliable and controllable</b>: understanding what makes agent behavior predictable,
+          and building evaluations that measure it rigorously.
+        </p>
+        <p>
+          Before ASU, I received my B.Eng. in Information Security from Changchun University of Science
+          and Technology, and spent a year as a software engineer building computer-vision and data systems
+          for electronics manufacturing.
+        </p>
+        <p class="highlight">
+          🎓 I am applying for <b>PhD programs starting in Fall 2027</b>.
+          Feel free to reach out if you think we might be a good fit!
+        </p>
+      </section>
+
+      <section id="interests">
+        <h2>Research Interests</h2>
+        <ul class="interest-list">
+          <li><b>LLM Agents &amp; Multi-Agent Systems</b>: how agents use tools and skills, and how multiple agents coordinate</li>
+          <li><b>Reliable &amp; Controllable Agent Reasoning</b>: making agent execution predictable and robust</li>
+          <li><b>Agent Evaluation</b>: controlled, statistically grounded methods for measuring agent behavior</li>
+        </ul>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news">
+          <li><span class="date">2026.05</span> Joined the DaRL Group at ASU as a research intern, working with Prof. Hua Wei on reusable skills for LLM agents.</li>
+          <li><span class="date">2025.08</span> Started my M.S. in Computer Science at Arizona State University.</li>
+        </ul>
+      </section>
+
+      <section id="research">
+        <h2>Research Experience</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>DaRL Group, Arizona State University</h3>
+            <span class="date">May 2026 – Present</span>
+          </div>
+          <p class="sub">Research Intern · Advisor: <a href="https://labs.engineering.asu.edu/hw/" target="_blank">Prof. Hua Wei</a></p>
+          <p class="project">Evaluating and Improving Reusable Skills for LLM Agents</p>
+          <ul>
+            <li>Studying how the design and quality of reusable skills affect the reliability of LLM agent execution.</li>
+            <li>Developed a structured evaluation framework covering execution-relevant skill properties (workflow completeness, validation, inter-step handoffs, error handling, scope–complexity alignment), and applied controlled perturbations to isolate each property's effect.</li>
+            <li>Ran repeated agent executions on SkillsBench across tasks and models, using within-task comparisons and statistical association analyses to quantify how skill quality translates into task success.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Department of Information Systems, Arizona State University</h3>
+            <span class="date">Aug. 2025 – Present</span>
+          </div>
+          <p class="sub">Research Assistant · Advisors: <a href="https://search.asu.edu/profile/5047660" target="_blank">Prof. Che-Wei Liu</a>, <a href="https://www.uta.edu/academics/faculty/profile?user=mingwei.sun" target="_blank">Prof. Mingwei Sun</a> (UT Arlington)</p>
+
+          <p class="project">Multimodal Multi-Agent Video Content Moderation</p>
+          <ul>
+            <li>Investigating video moderation that jointly reasons over vocal tone, transcribed text, and visual keyframes, extending prior work focused on image–text inputs.</li>
+            <li>Developing a multi-agent framework where a dedicated agent analyzes each modality and the agents collaborate to reach a final decision.</li>
+          </ul>
+
+          <p class="project">Generative AI vs. Marketplace Search: Product Recommendation Study</p>
+          <ul>
+            <li>Designed a controlled, paired comparison of product recommendations from GPT, Grok, Claude, and Gemini against Etsy's native search across ranking conditions.</li>
+            <li>Built fault-tolerant, resumable infrastructure for large-scale LLM querying and web collection (4,000+ category nodes, 300,000+ pages); validated extraction against a hand-labeled gold set before scaling to 51,898 listings.</li>
+            <li>Pipeline and data supported a paper accepted at CIST 2026, DSI 2026, and WORTH 2027.</li>
+          </ul>
+
+          <p class="project">Online Experiment Infrastructure for Behavioral Studies</p>
+          <ul>
+            <li>Built online experiment platforms for studies on autonomous vehicles (Major Revision, <i>Information Systems Research</i>) and AI co-created music evaluation (INFORMS 2026, POMS 2027, WORTH 2027).</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Network and Information Systems Lab, CUST</h3>
+            <span class="date">Jun. 2022 – Jun. 2023</span>
+          </div>
+          <p class="sub">Research Assistant · Supervisor: Prof. Hui Qi</p>
+          <ul>
+            <li>Developed full-stack features for an academic project management platform (Spring Boot, SQL Server) that launched to 100,000+ users.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Arizona State University</h3>
+            <span class="date">Aug. 2025 – Present</span>
+          </div>
+          <p class="sub">M.S. in Computer Science · GPA: 3.72 / 4.0</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Changchun University of Science and Technology</h3>
+            <span class="date">Sep. 2020 – Jun. 2024</span>
+          </div>
+          <p class="sub">B.Eng. in Information Security · GPA: 3.54 / 4.0 (WES) · Rank: 6 / 68</p>
+        </div>
+      </section>
+
+      <section id="industry">
+        <h2>Industry Experience</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Guangdong Sunram Electronic Technology Co., Ltd.</h3>
+            <span class="date">Jul. 2024 – Apr. 2025</span>
+          </div>
+          <p class="sub">Software Development Engineer · Foshan, China</p>
+          <ul>
+            <li>Trained a YOLOv8 model to recognize 9 types of electronic components on SMT boards with 90%+ accuracy.</li>
+            <li>Built a computer-vision error detection system for production-line FCT equipment, integrated with the MES database.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="awards">
+        <h2>Honors &amp; Awards</h2>
+        <ul class="simple">
+          <li><span class="date">2022.12</span> Provincial First Prize, Contemporary Undergraduate Mathematical Contest in Modeling</li>
+          <li><span class="date">2022.04</span> Second Prize (Northeast Division), WeChat Mini Program Application Development Contest</li>
+          <li><span class="date">2020–2023</span> CUST Second- and Third-Class Scholarships (6 consecutive semesters)</li>
+        </ul>
+      </section>
+
+      <section id="misc">
+        <h2>Beyond Research</h2>
+        <p>
+          Outside of research, I am a certified Chinese pastry chef and a certified electrician,
+          and I enjoy video production.
+        </p>
+      </section>
+
+      <footer class="footer">
+        Last updated: <span id="updated">Nov 2026</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
